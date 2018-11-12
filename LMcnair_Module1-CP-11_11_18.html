@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click here if you have 5 seconds to spare</p>
+<button onclick="delayedAlert();">I have 5 seconds!</button>
+
+
+
+
+
+<script>
+var timeoutID;
+
+function delayedAlert() {
+  timeoutID = window.setTimeout(window.alert, 5000, 'Hello World!');
+};
+</script>
+
+</body>
+</html>
