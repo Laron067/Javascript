@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JavaScript conditional statement to sort three numbers</title>
+</head>
+<body>
+<script>
+function sortete() {
+var a = Number(window.prompt("Insert first number, please."));
+var b = Number(window.prompt("Insert second number, please."));
+var c = Number(window.prompt("Insert third number, please."));
+
+if (a > b && a > c) {
+alert(b > c ? ("a: " + a + ", b: " + b + ", c: " + c) : ("a: " + a + ", c: " + c + ", b: " + b));
+}
+if (b > c && b > a) {
+alert(c > a ? ("b: " + b + ", c: " + c + ", a: " + a) : ("b: " + b + ", a: " + a + ", c: " + c));
+}
+if (c > a && c > b) {
+alert(a > b ? ("c: " + c + ", a: " + a + ", b: " + b) : ("c: " + c + ", b: " + b + ", a: " + a));
+}
+}
+
+sortete();
+</script>
+</body>
+</html>
